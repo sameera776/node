@@ -5,7 +5,7 @@ app.get("/", (req, res) => {
     res.send("<h1>Hello World</h1>");
 });
 
-app.listen(port, (err) => {
+app.listen(port,'0.0.0.0', (err) => {
     if (err) {
         console.error("Failed to start server:", err);
     } else {
